@@ -474,3 +474,105 @@ header .container{
     flex-direction: column;
     gap: var(--content-gap);
 }
+/* ===================================
+TABLET
+==================================== */
+@media (min-width: 767px) {
+    .welcome .container:not(.cta):not(.hobby-wrapper){
+        flex-direction: row;
+    }
+    .welcome-media{
+        width: 20%;
+    }
+    .welcome-content{
+        width: 80%;
+    }
+    .welcome-media img{
+        width: 100%;
+        object-fit: contain; 
+        border-radius: 100vw;
+    }
+    .project-card{
+        flex-direction: row;
+    }
+    .info-wrapper ul{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .hero__intro{
+        align-items: center;
+    }
+    .hero__media{
+        display: flex;
+        justify-content: center;
+    }
+    .hero__media img{
+        max-width: 50rem;
+    }
+    .image-text-block{
+        flex-direction: row-reverse;
+        gap: var(--content-gap);
+        justify-content:space-between
+    }
+    .image-text-block__content{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .image-text-block__media{
+        width: 30%;
+    }
+    .page-navigation ol{
+        column-count: 2;
+    }
+    #section-two img{
+        max-width: 50rem;
+        margin-inline: auto;
+    }
+    .screenshots img{
+        height: 36rem;
+    }
+    .container {
+        padding-inline: 6rem;
+        max-width: 1000px;
+        margin-inline: auto;
+        width: 100%;
+    }
+    .persona-card .persona-card__wrapper{
+        flex-direction: row-reverse;
+    }
+    .image-text-block.no-reverse{
+        flex-direction: column;
+    }
+    .full-width{
+        width: 100%;
+    }
+    .screenshot-media .screenshot{
+        max-width: 20rem;
+    }
+    .screenshot-text__wrapper{
+        flex-direction: row;
+    }
+    .text-block{
+        justify-content: center;
+    }
+    .design-wrapper{
+        flex-direction: row;
+    }
+    .hobby{
+        flex-direction: row-reverse;
+    }
+    .hobby__content{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hobby__media{
+        width: 20%;
+    }
+    .skills-wrapper{
+        justify-content: space-between;
+    }
+}
