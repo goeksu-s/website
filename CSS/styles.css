@@ -164,7 +164,8 @@ nav a:active
 .social a:active{ 
     color:hsl(241, 73%, 25%);
 }
-header .container{
+header .navtoggle{
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -474,10 +475,22 @@ header .container{
     flex-direction: column;
     gap: var(--content-gap);
 }
+.navtoggle .social li:not(:last-child){
+    display: none;
+}
+.navtoggle.responsive .social li{
+    display: flex;
+}
+.navtoggle.responsive .social li:last-child{
+    display: none;
+}
 /* ===================================
 TABLET
 ==================================== */
 @media (min-width: 767px) {
+    .social ul li:last-child{
+        display: none;
+    }
     .welcome .container:not(.cta):not(.hobby-wrapper){
         flex-direction: row;
     }
